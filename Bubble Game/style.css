@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(100, 187, 158);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.panel {
+  height: 80%;
+  width: 90%;
+  background-color: azure;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ptop {
+  height: 15%;
+  background-color: rgb(12, 117, 82);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#elem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+#box {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 10px;
+  height: 30%;
+  background-color: white;
+  color: rgb(6, 153, 8);
+}
+
+.pbtm {
+  height: calc(100% - 15%);
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.bubble {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  background-color: green;
+}
+.bubble:hover {
+  /* background-color: rgb(126, 238, 201); */
+  filter: brightness(2);
+  cursor: pointer;
+}
+.red {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  background-color: red;
+}
+/* Button style one  */
+/* .btn {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  border-radius: 6px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 200px;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+.btn:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 5px 10px;
+} */
+
+/* Button style 2  */
+.btn {
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #004dff;
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.btn:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
